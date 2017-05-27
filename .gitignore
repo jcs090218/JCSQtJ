@@ -3,6 +3,8 @@
 /res
 /build
 /lib
+/bin
+/settings
 
 # ignore all gtags files
 GPATH*
