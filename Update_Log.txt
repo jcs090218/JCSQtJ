@@ -1,0 +1,27 @@
+========================================================================
+$File: Update_Log.txt $
+$Creator: Jen-Chieh Shen <jcs090218@gmail.com> $
+$Date: 2017-03-27 $
+$Notice: See LICENSE.txt for modification and distribution information 
+                  Copyright (c) 2017 by Shen, Jen-Chieh $
+========================================================================
+
+
+2017-04-26
+* QtLineEdit implemented. (JCSQtJ)
+* QtTextEdit implemented. (JCSQtJ)
+
+2017-03-29
+* Bug fix. (JCSQtJ)
+* JCSQtJ_Util add combobox GUI component. (JCSQtJ)
+
+
+2017-03-28
+* JCSQtJ_Window implemented. (JCSQtJ)
+* JCSQtJ_Util implemented. (JCSQtJ)
+* JCSQtJ_Debug implemented. (JCSQtJ)
+* JCSQtJ_Widget implemented. (JCSQtJ)
+* Export build JCSQtJ-1.0.1.jar file. (Build)
+
+2017-03-27
+* Project setup. (JCSQtJ)
