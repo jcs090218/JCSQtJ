@@ -1,0 +1,13 @@
+# ignore file descriptor
+/.git
+/res
+/build
+/lib
+
+# ignore all gtags files
+GPATH*
+GRTAGS*
+GTAGS*
+
+# error log
+*.log
