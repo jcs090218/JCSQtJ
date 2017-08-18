@@ -484,112 +484,112 @@ public class JCSQtJ_Window {
     }
 
     /**
-     * @func setDefualtButtonWidth
+     * @func setDefaultButtonWidth
      * @brief Set the default button width value.
      * Note this can use to organize all the button
      * the same size.
      * @param w : width value.
      */
-    public void setDefualtButtonWidth(int w) {
+    public void setDefaultButtonWidth(int w) {
         this.defaultBtnWidth = w;
     }
 
     /**
-     * @func setDefualtButtonHeight
+     * @func setDefaultButtonHeight
      * @brief Set the default button height value.
      * Note this can use to organize all the button
      * the same size.
      * @param h : height value.
      */
-    public void setDefualtButtonHeight(int h) {
+    public void setDefaultButtonHeight(int h) {
         this.defaultBtnHeight = h;
     }
 
     /**
-     * @func setDefualtLabelWidth
+     * @func setDefaultLabelWidth
      * @brief Set the default label width value.
      * Note this can use to organize all the button
      * the same size.
      * @param w : width value.
      */
-    public void setDefualtLabelWidth(int w) {
+    public void setDefaultLabelWidth(int w) {
         this.defaultBtnWidth = w;
     }
 
     /**
-     * @func setDefualtLabelHeight
+     * @func setDefaultLabelHeight
      * @brief Set the default label height value.
      * Note this can use to organize all the button
      * the same size.
      * @param h : height value.
      */
-    public void setDefualtLabelHeight(int h) {
+    public void setDefaultLabelHeight(int h) {
         this.defaultLabelHeight = h;
     }
     
     /**
-     * @func setDefualtComboBoxWidth
+     * @func setDefaultComboBoxWidth
      * @brief Set the default combo box width value.
      * Note this can use to organize all the button
      * the same size.
      * @param w : width value.
      */
-    public void setDefualtComboBoxWidth(int w) {
+    public void setDefaultComboBoxWidth(int w) {
         this.defaultComboBoxWidth = w;
     }
 
     /**
-     * @func setDefualtComboBoxHeight
+     * @func setDefaultComboBoxHeight
      * @brief Set the default combo box height value.
      * Note this can use to organize all the button
      * the same size.
      * @param h : height value.
      */
-    public void setDefualtComboBoxHeight(int h) {
+    public void setDefaultComboBoxHeight(int h) {
         this.defaultComboBoxHeight = h;
     }
     
     /**
-     * @func setDefualtTextEditWidth
+     * @func setDefaultTextEditWidth
      * @brief Set the default text edit width value.
      * Note this can use to organize all the button
      * the same size.
      * @param w : width value.
      */
-    public void setDefualtTextEditWidth(int w) {
+    public void setDefaultTextEditWidth(int w) {
         this.defaultTextEditWidth = w;
     }
 
     /**
-     * @func setDefualtTextEditHeight
+     * @func setDefaultTextEditHeight
      * @brief Set the default text edit height value.
      * Note this can use to organize all the button
      * the same size.
      * @param h : height value.
      */
-    public void setDefualtTextEditHeight(int h) {
+    public void setDefaultTextEditHeight(int h) {
         this.defaultTextEditHeight = h;
     }
     
     /**
-     * @func setDefualtLineEditWidth
+     * @func setDefaultLineEditWidth
      * @brief Set the default line edit width value.
      * Note this can use to organize all the button
      * the same size.
      * @param w : width value.
      */
-    public void setDefualtLineEditWidth(int w) {
+    public void setDefaultLineEditWidth(int w) {
         this.defaultLineEditWidth = w;
     }
 
     /**
-     * @func setDefualtLineEditHeight
+     * @func setDefaultLineEditHeight
      * @brief Set the default line edit height value.
      * Note this can use to organize all the button
      * the same size.
      * @param h : height value.
      */
-    public void setDefualtLineEditHeight(int h) {
+    public void setDefaultLineEditHeight(int h) {
         this.defaultLineEditHeight = h;
     }
 

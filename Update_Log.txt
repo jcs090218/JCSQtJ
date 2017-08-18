@@ -7,6 +7,9 @@
 # ========================================================================
 
 
+2017-08-19
+* Fixed miss spell the word 'default'. (JCSQtJ)
+
 2017-04-26
 * QtLineEdit implemented. (JCSQtJ)
 * QtTextEdit implemented. (JCSQtJ)
