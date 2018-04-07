@@ -8,6 +8,7 @@ import javax.imageio.ImageIO;
 
 import com.aldes.jcsqtj.util.JCSQtJ_Util;
 import com.trolltech.qt.gui.QApplication;
+import com.trolltech.qt.gui.QCheckBox;
 import com.trolltech.qt.gui.QComboBox;
 import com.trolltech.qt.gui.QIcon;
 import com.trolltech.qt.gui.QLabel;
@@ -72,6 +73,10 @@ public class JCSQtJ_Window {
     /* Combo Box default value */
     private int defaultComboBoxWidth = 100;
     private int defaultComboBoxHeight = 30;
+    
+    /* Check Box default value */
+    private int defaultCheckBoxWidth = 100;
+    private int defaultCheckBoxHeight = 30;
     
     /* Text Edit default value */
     private int defaultTextEditWidth = 300;
@@ -364,6 +369,48 @@ public class JCSQtJ_Window {
                 y,
                 defaultComboBoxWidth,
                 defaultComboBoxHeight);
+    }
+    
+    /**
+     * @func addCheckBoxToWindow
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @param width : width of the checkbox.
+     * @param height : height of the checkbox.
+     * @return QCheckBox : checkbox we just create.
+     */
+    public QCheckBox addCheckBoxToWindow(
+            int x,
+            int y,
+            int width,
+            int height) {
+        
+        return JCSQtJ_Util.addCheckBoxToWidget(
+                this.widget,
+                x,
+                y,
+                width,
+                height);
+    }
+    
+    /**
+     * @func addCheckBoxToWindow
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @return QCheckBox : checkbox we just create.
+     */
+    public QCheckBox addCheckBoxToWindow(
+            int x,
+            int y) {
+        
+        return JCSQtJ_Util.addCheckBoxToWidget(
+                this.widget,
+                x,
+                y,
+                defaultCheckBoxWidth,
+                defaultCheckBoxHeight);
     }
     
     /**
@@ -674,6 +721,24 @@ public class JCSQtJ_Window {
      */
     public int getDefaultComboBoxHeight() {
         return this.defaultComboBoxHeight;
+    }
+    
+    /**
+     * @func getDefaultCheckBoxWidth
+     * @brief Return default check box width value.
+     * @return int : Return value.
+     */
+    public int getDefaultCheckBoxWidth() {
+        return this.defaultCheckBoxWidth;
+    }
+    
+    /**
+     * @func getDefaultCheckBoxHeight
+     * @brief Return default check box height value.
+     * @return int : Return value.
+     */
+    public int getDefaultCheckBoxHeight() {
+        return this.defaultCheckBoxHeight;
     }
     
     /**
