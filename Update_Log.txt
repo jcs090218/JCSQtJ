@@ -7,6 +7,10 @@
 # ========================================================================
 
 
+2018-04-07
+* Add check box widget functions. (JCSQtJ)
+* Add check box window functions. (JCSQtJ)
+
 2017-08-19
 * Fixed miss spell the word 'default'. (JCSQtJ)
 
