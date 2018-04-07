@@ -3,6 +3,7 @@ package com.aldes.jcsqtj;
 import com.aldes.jcsqtj.core.JCSQtJ_Window;
 import com.aldes.jcsqtj.examples.MyWidget;
 import com.aldes.jcsqtj.util.JCSQtJ_Util;
+import com.trolltech.qt.gui.QCheckBox;
 import com.trolltech.qt.gui.QComboBox;
 import com.trolltech.qt.gui.QLabel;
 import com.trolltech.qt.gui.QLineEdit;
@@ -105,6 +106,9 @@ public class ProgramMain {
         /* Line Field */
         QLineEdit textField = new QLineEdit(widget);
         textField.move(400, 200);
+        
+        /* Check Box */
+        QCheckBox checkbox = window.addCheckBoxToWindow(300, 200);
         
         /** Test Block **/
         
