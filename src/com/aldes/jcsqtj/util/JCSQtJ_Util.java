@@ -1,5 +1,6 @@
 package com.aldes.jcsqtj.util;
 
+import com.trolltech.qt.gui.QCheckBox;
 import com.trolltech.qt.gui.QComboBox;
 import com.trolltech.qt.gui.QGraphicsScene;
 import com.trolltech.qt.gui.QLabel;
@@ -171,6 +172,48 @@ public class JCSQtJ_Util {
         newComboBox.setMaximumSize(width, height);
         
         return newComboBox;
+    }
+    
+    /**
+     * @func addCheckBoxToWidget
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param widget : main panel.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @return QCheckBox : checkbox we just create.
+     */
+    public static QCheckBox addCheckBoxToWidget(
+            QWidget widget, 
+            int x,
+            int y) {
+        return addCheckBoxToWidget(widget, x, y, 0, 0);
+    }
+    
+    /**
+     * @func addCheckBoxToWidget
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param widget : main panel.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @param width : width of the button.
+     * @param height : height of the button.
+     * @return QCheckBox : checkbox we just create.
+     */
+    public static QCheckBox addCheckBoxToWidget(
+            QWidget widget, 
+            int x,
+            int y,
+            int width,
+            int height) {
+        
+        QCheckBox newCheckBox = new QCheckBox(widget);
+        
+        newCheckBox.move(x, y);
+        
+        newCheckBox.setMinimumSize(width, height);
+        newCheckBox.setMaximumSize(width, height);
+        
+        return newCheckBox;
     }
     
     /**
