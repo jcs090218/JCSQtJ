@@ -6,6 +6,7 @@ import com.trolltech.qt.gui.QGraphicsScene;
 import com.trolltech.qt.gui.QLabel;
 import com.trolltech.qt.gui.QLineEdit;
 import com.trolltech.qt.gui.QPixmap;
+import com.trolltech.qt.gui.QProgressBar;
 import com.trolltech.qt.gui.QPushButton;
 import com.trolltech.qt.gui.QTextEdit;
 import com.trolltech.qt.gui.QWidget;
@@ -214,6 +215,48 @@ public class JCSQtJ_Util {
         newCheckBox.setMaximumSize(width, height);
         
         return newCheckBox;
+    }
+    
+    /**
+     * @func addProgressBarToWindow
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param widget : main panel.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @return QCheckBox : checkbox we just create.
+     */
+    public static QProgressBar addProgressBarToWidget(
+            QWidget widget, 
+            int x,
+            int y) {
+        return addProgressBarToWidget(widget, x, y, 0, 0);
+    }
+    
+    /**
+     * @func addProgressBarToWindow
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param widget : main panel.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @param width : width of the button.
+     * @param height : height of the button.
+     * @return QCheckBox : checkbox we just create.
+     */
+    public static QProgressBar addProgressBarToWidget(
+            QWidget widget, 
+            int x,
+            int y,
+            int width,
+            int height) {
+        
+        QProgressBar newProgressBar = new QProgressBar(widget);
+        
+        newProgressBar.move(x, y);
+        
+        newProgressBar.setMinimumSize(width, height);
+        newProgressBar.setMaximumSize(width, height);
+        
+        return newProgressBar;
     }
     
     /**

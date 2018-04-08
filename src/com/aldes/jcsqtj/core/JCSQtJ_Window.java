@@ -13,6 +13,7 @@ import com.trolltech.qt.gui.QComboBox;
 import com.trolltech.qt.gui.QIcon;
 import com.trolltech.qt.gui.QLabel;
 import com.trolltech.qt.gui.QLineEdit;
+import com.trolltech.qt.gui.QProgressBar;
 import com.trolltech.qt.gui.QPushButton;
 import com.trolltech.qt.gui.QTextEdit;
 import com.trolltech.qt.gui.QWidget;
@@ -85,6 +86,10 @@ public class JCSQtJ_Window {
     /* Line Edit default value */
     private int defaultLineEditWidth = 100;
     private int defaultLineEditHeight = 30;
+    
+    /* Progress Bar default value */
+    private int defaultProgressBarWidth = 100;
+    private int defaultProgressBarHeight = 30;
     
     /**
      * @func JCSQtJ_Window
@@ -420,7 +425,7 @@ public class JCSQtJ_Window {
      * @param y : y axis relative position.
      * @return QTextEdit : text edit we just create.
      */
-    public QTextEdit addTextEditToWidget(
+    public QTextEdit addTextEditToWindow(
             int x,
             int y) {
         
@@ -470,8 +475,8 @@ public class JCSQtJ_Window {
         return addLineEditToWindow(
                 x,
                 y,
-                this.getDefaultLabelWidth(),
-                this.getDefaultLabelHeight());
+                this.getDefaultLineEditWidth(),
+                this.getDefaultLineEditHeight());
     }
     
     /**
@@ -490,6 +495,49 @@ public class JCSQtJ_Window {
             int height) {
         
         return JCSQtJ_Util.addLineEditToWidget(
+                this.widget,
+                x,
+                y,
+                width,
+                height);
+    }
+    
+    /**
+     * @func addProgressBarToWindow
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @param width : width of the progress bar.
+     * @param height : height of the progress bar.
+     * @return QProgressBar : progress bar we just create.
+     */
+    public QProgressBar addProgressBarToWindow(
+            int x,
+            int y) {
+        
+        return addProgressBarToWindow(
+                x,
+                y,
+                this.getDefaultProgressBarWidth(),
+                this.getDefaultProgressBarHeight());
+    }
+    
+    /**
+     * @func addProgressBarToWindow
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @param width : width of the progress bar.
+     * @param height : height of the progress bar.
+     * @return QProgressBar : line edit we just create.
+     */
+    public QProgressBar addProgressBarToWindow(
+            int x,
+            int y,
+            int width,
+            int height) {
+        
+        return JCSQtJ_Util.addProgressBarToWidget(
                 this.widget,
                 x,
                 y,
@@ -639,6 +687,28 @@ public class JCSQtJ_Window {
     public void setDefaultLineEditHeight(int h) {
         this.defaultLineEditHeight = h;
     }
+    
+    /**
+     * @func setDefaultProgressBarWidth
+     * @brief Set the default progress bar width value.
+     * Note this can use to organize all the button
+     * the same size.
+     * @param w : width value.
+     */
+    public void setDefaultProgressBarWidth(int w) {
+        this.defaultProgressBarWidth = w;
+    }
+    
+    /**
+     * @func setDefaultProgressBarHeight
+     * @brief Set the default progress bar height value.
+     * Note this can use to organize all the button
+     * the same size.
+     * @param h : height value.
+     */
+    public void setDefaultProgressBarHeight(int h) {
+        this.defaultProgressBarHeight = h;
+    }
 
 
     /* getter */
@@ -775,6 +845,24 @@ public class JCSQtJ_Window {
      */
     public int getDefaultLineEditHeight() {
         return this.defaultLineEditHeight;
+    }
+    
+    /**
+     * @func getDefaultProgressBarWidth
+     * @brief Return default progress bar width value.
+     * @return int : Return value.
+     */
+    public int getDefaultProgressBarWidth() {
+        return this.defaultProgressBarWidth;
+    }
+    
+    /**
+     * @func getDefaultProgressBarHeight
+     * @brief Return default progress bar height value.
+     * @return int : Return value.
+     */
+    public int getDefaultProgressBarHeight() {
+        return this.defaultProgressBarHeight;
     }
 
 }
