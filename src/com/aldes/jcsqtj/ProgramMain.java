@@ -7,6 +7,7 @@ import com.trolltech.qt.gui.QCheckBox;
 import com.trolltech.qt.gui.QComboBox;
 import com.trolltech.qt.gui.QLabel;
 import com.trolltech.qt.gui.QLineEdit;
+import com.trolltech.qt.gui.QProgressBar;
 import com.trolltech.qt.gui.QTextEdit;
 
 /**
@@ -109,6 +110,10 @@ public class ProgramMain {
         
         /* Check Box */
         QCheckBox checkbox = window.addCheckBoxToWindow(300, 200);
+        
+        /* Progress Bar */
+        QProgressBar pb = new QProgressBar(widget);
+        pb.setValue(40);
         
         /** Test Block **/
         
