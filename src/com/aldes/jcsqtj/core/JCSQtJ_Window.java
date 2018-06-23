@@ -13,6 +13,7 @@ import com.trolltech.qt.gui.QComboBox;
 import com.trolltech.qt.gui.QIcon;
 import com.trolltech.qt.gui.QLabel;
 import com.trolltech.qt.gui.QLineEdit;
+import com.trolltech.qt.gui.QPlainTextEdit;
 import com.trolltech.qt.gui.QProgressBar;
 import com.trolltech.qt.gui.QPushButton;
 import com.trolltech.qt.gui.QTextEdit;
@@ -82,6 +83,10 @@ public class JCSQtJ_Window {
     /* Text Edit default value */
     private int defaultTextEditWidth = 300;
     private int defaultTextEditHeight = 60;
+    
+    /* Plain Text Edit default value */
+    private int defaultPlainTextEditWidth = 300;
+    private int defaultPlainTextEditHeight = 60;
     
     /* Line Edit default value */
     private int defaultLineEditWidth = 100;
@@ -437,6 +442,47 @@ public class JCSQtJ_Window {
     }
     
     /**
+     * @func addPlainTextEditToWindow
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @param width : width of the text edit.
+     * @param height : height of the text edit.
+     * @return QPlainTextEdit : plain text edit we just create.
+     */
+    public QPlainTextEdit addPlainTextEditToWindow(
+            int x,
+            int y,
+            int width,
+            int height) {
+        
+        return JCSQtJ_Util.addPlainTextEditToWidget(
+                this.widget,
+                x,
+                y,
+                width,
+                height);
+    }
+    
+    /**
+     * @func addPlainTextEditToWindow
+     * @brief Create a graphics scene and add it to pass in widget.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @return QPlainTextEdit : plain text edit we just create.
+     */
+    public QPlainTextEdit addPlainTextEditToWindow(
+            int x,
+            int y) {
+        
+        return addPlainTextEditToWindow(
+                x,
+                y,
+                this.getDefaultTextEditWidth(),
+                this.getDefaultTextEditHeight());
+    }
+    
+    /**
      * @func addTextEditToWindow
      * @brief Create a graphics scene and add it to pass in widget.
      * @param x : x axis relative position.
@@ -603,7 +649,7 @@ public class JCSQtJ_Window {
     /**
      * @func setDefaultLabelWidth
      * @brief Set the default label width value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the label
      * the same size.
      * @param w : width value.
      */
@@ -614,7 +660,7 @@ public class JCSQtJ_Window {
     /**
      * @func setDefaultLabelHeight
      * @brief Set the default label height value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the label
      * the same size.
      * @param h : height value.
      */
@@ -625,7 +671,7 @@ public class JCSQtJ_Window {
     /**
      * @func setDefaultComboBoxWidth
      * @brief Set the default combo box width value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the combo box
      * the same size.
      * @param w : width value.
      */
@@ -636,7 +682,7 @@ public class JCSQtJ_Window {
     /**
      * @func setDefaultComboBoxHeight
      * @brief Set the default combo box height value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the combo box
      * the same size.
      * @param h : height value.
      */
@@ -647,7 +693,7 @@ public class JCSQtJ_Window {
     /**
      * @func setDefaultTextEditWidth
      * @brief Set the default text edit width value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the text edit
      * the same size.
      * @param w : width value.
      */
@@ -658,7 +704,7 @@ public class JCSQtJ_Window {
     /**
      * @func setDefaultTextEditHeight
      * @brief Set the default text edit height value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the text edit
      * the same size.
      * @param h : height value.
      */
@@ -667,9 +713,31 @@ public class JCSQtJ_Window {
     }
     
     /**
+     * @func setDefaultPlainTextEditWidth
+     * @brief Set the default text edit width value.
+     * Note this can use to organize all the plain text edit
+     * the same size.
+     * @param w : width value.
+     */
+    public void setDefaultPlainTextEditWidth(int w) {
+        this.defaultPlainTextEditWidth = w;
+    }
+
+    /**
+     * @func setDefaultPlainTextEditHeight
+     * @brief Set the default text edit height value.
+     * Note this can use to organize all the plain text edit
+     * the same size.
+     * @param h : height value.
+     */
+    public void setDefaultPlainTextEditHeight(int h) {
+        this.defaultPlainTextEditHeight = h;
+    }
+    
+    /**
      * @func setDefaultLineEditWidth
      * @brief Set the default line edit width value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the line edit
      * the same size.
      * @param w : width value.
      */
@@ -680,7 +748,7 @@ public class JCSQtJ_Window {
     /**
      * @func setDefaultLineEditHeight
      * @brief Set the default line edit height value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the line edit
      * the same size.
      * @param h : height value.
      */
@@ -691,7 +759,7 @@ public class JCSQtJ_Window {
     /**
      * @func setDefaultProgressBarWidth
      * @brief Set the default progress bar width value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the label
      * the same size.
      * @param w : width value.
      */
@@ -702,7 +770,7 @@ public class JCSQtJ_Window {
     /**
      * @func setDefaultProgressBarHeight
      * @brief Set the default progress bar height value.
-     * Note this can use to organize all the button
+     * Note this can use to organize all the progress bar
      * the same size.
      * @param h : height value.
      */
@@ -829,6 +897,23 @@ public class JCSQtJ_Window {
         return this.defaultTextEditHeight;
     }
     
+    /**
+     * @func getDefaultPlainTextEditWidth
+     * @brief Return default plain text edit width value.
+     * @return int : Return value.
+     */
+    public int getDefaultPlainTextEditWidth() {
+        return this.defaultPlainTextEditWidth;
+    }
+    
+    /**
+     * @func getDefaultPlainTextEditHeight
+     * @brief Return default plain text edit height value.
+     * @return int : Return value.
+     */
+    public int getDefaultPlainTextEditHeight() {
+        return this.defaultPlainTextEditHeight;
+    }
     /**
      * @func getDefaultLineEditWidth
      * @brief Return default line edit width value.

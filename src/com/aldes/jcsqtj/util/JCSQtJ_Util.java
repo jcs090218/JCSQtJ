@@ -6,6 +6,7 @@ import com.trolltech.qt.gui.QGraphicsScene;
 import com.trolltech.qt.gui.QLabel;
 import com.trolltech.qt.gui.QLineEdit;
 import com.trolltech.qt.gui.QPixmap;
+import com.trolltech.qt.gui.QPlainTextEdit;
 import com.trolltech.qt.gui.QProgressBar;
 import com.trolltech.qt.gui.QPushButton;
 import com.trolltech.qt.gui.QTextEdit;
@@ -94,7 +95,7 @@ public class JCSQtJ_Util {
      * @param widget : main panel.
      * @param x : x axis relative position.
      * @param y : y axis relative position.
-     * @return QComboBox : text edit we just create.
+     * @return QTextEdit : text edit we just create.
      */
     public static QTextEdit addTextEditToWidget(
             QWidget widget, 
@@ -115,7 +116,7 @@ public class JCSQtJ_Util {
      * @param y : y axis relative position.
      * @param width : width of the text edit.
      * @param height : height of the text edit.
-     * @return QComboBox : text edit we just create.
+     * @return QTextEdit : text edit we just create.
      */
     public static QTextEdit addTextEditToWidget(
             QWidget widget, 
@@ -124,6 +125,51 @@ public class JCSQtJ_Util {
             int width,
             int height) {
         QTextEdit newTextEdit = new QTextEdit(widget);
+        
+        newTextEdit.move(x, y);
+        
+        newTextEdit.setMinimumSize(width, height);
+        newTextEdit.setMaximumSize(width, height);
+        
+        return newTextEdit;
+    }
+    
+    /**
+     * @func addPlainTextEditToWidget
+     * @brief Create a plain text edit area in the window.
+     * @param widget : main panel.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @return QPlainTextEdit : text edit we just create.
+     */
+    public static QPlainTextEdit addPlainTextEditToWidget(
+            QWidget widget, 
+            int x,
+            int y) {
+        QPlainTextEdit newTextEdit = new QPlainTextEdit(widget);
+        
+        newTextEdit.move(x, y);
+        
+        return newTextEdit;
+    }
+    
+    /**
+     * @func addPlainTextEditToWidget
+     * @brief Create a plain text edit area in the window.
+     * @param widget : main panel.
+     * @param x : x axis relative position.
+     * @param y : y axis relative position.
+     * @param width : width of the text edit.
+     * @param height : height of the text edit.
+     * @return QPlainTextEdit : plain text edit we just create.
+     */
+    public static QPlainTextEdit addPlainTextEditToWidget(
+            QWidget widget, 
+            int x,
+            int y,
+            int width,
+            int height) {
+        QPlainTextEdit newTextEdit = new QPlainTextEdit(widget);
         
         newTextEdit.move(x, y);
         
