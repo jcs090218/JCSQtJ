@@ -562,6 +562,8 @@ public class JCSQtJ_Util {
      * @func setTextEditFontSize
      * @brief Set the text edit font size.
      * 
+     * @source https://stackoverflow.com/questions/26600057/how-to-change-the-fontsize-for-everything-inside-qtextedit-in-pyqt4
+     * 
      * @param te : text edit object.
      * @param size : font size.
      */
