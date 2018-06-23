@@ -9,6 +9,7 @@ import com.trolltech.qt.gui.QPixmap;
 import com.trolltech.qt.gui.QPlainTextEdit;
 import com.trolltech.qt.gui.QProgressBar;
 import com.trolltech.qt.gui.QPushButton;
+import com.trolltech.qt.gui.QTextCursor;
 import com.trolltech.qt.gui.QTextEdit;
 import com.trolltech.qt.gui.QWidget;
 
@@ -555,6 +556,20 @@ public class JCSQtJ_Util {
     public static void addImageToLabel(QLabel label, QPixmap pix) {
         // set image to label.
         label.setPixmap(pix);
+    }
+    
+    /**
+     * @func setTextEditFontSize
+     * @brief Set the text edit font size.
+     * 
+     * @param te : text edit object.
+     * @param size : font size.
+     */
+    public static void setTextEditFontSize(QTextEdit te, int size) {
+        QTextCursor tc = te.textCursor();
+        te.selectAll();
+        te.setFontPointSize(size);
+        te.setTextCursor(tc);
     }
 
 }
