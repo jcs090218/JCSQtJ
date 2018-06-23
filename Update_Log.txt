@@ -7,6 +7,10 @@
 # ========================================================================
 
 
+2018-06-23
+* Add plain text edit component. (JCSQtJ)
+* Update project version to 1.0.3. (JCSQtJ)
+
 2018-04-08
 * Add 'add progress bar to window' functionalities. (JCSQtJ)
 
