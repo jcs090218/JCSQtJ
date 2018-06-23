@@ -7,6 +7,7 @@ import com.trolltech.qt.gui.QCheckBox;
 import com.trolltech.qt.gui.QComboBox;
 import com.trolltech.qt.gui.QLabel;
 import com.trolltech.qt.gui.QLineEdit;
+import com.trolltech.qt.gui.QPlainTextEdit;
 import com.trolltech.qt.gui.QProgressBar;
 import com.trolltech.qt.gui.QTextEdit;
 
@@ -103,6 +104,13 @@ public class ProgramMain {
         textArea.setMinimumSize(100, 30);
         textArea.setMaximumSize(300, 60);
         textArea.setEnabled(true);
+        
+        /* Plain Text Area */
+        QPlainTextEdit plainTextArea = new QPlainTextEdit(widget);
+        plainTextArea.move(400, 400);
+        plainTextArea.setMinimumSize(100, 30);
+        plainTextArea.setMaximumSize(300, 60);
+        plainTextArea.setEnabled(true);
         
         /* Line Field */
         QLineEdit textField = new QLineEdit(widget);
