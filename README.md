@@ -1,5 +1,4 @@
 # JCSQtJ #
-<br/>
 
 JCSQtJ is a rewrapper of Qt Jambi framework. Qt Jambi provide alot
 of useful function that your build cross platform GUI software 
