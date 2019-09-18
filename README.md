@@ -1,8 +1,9 @@
 [![Build Status](https://travis-ci.com/jcs090218/JCSQtJ.svg?branch=master)](https://travis-ci.com/jcs090218/JCSQtJ)
+[![Release Tag](https://img.shields.io/github/tag/jcs090218/JCSQtJ.svg?label=release)](https://github.com/jcs090218/JCSQtJ/releases/latest)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
-# JCSQtJ #
+# JCSQtJ
 
 JCSQtJ is a rewrapper of Qt Jambi framework. Qt Jambi provide alot
 of useful function that your build cross platform GUI software 
