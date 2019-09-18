@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/jcs090218/JCSQtJ.svg?branch=master)](https://travis-ci.com/jcs090218/JCSQtJ)
-[![QtJambi](https://img.shields.io/badge/QtJambi-4.8.7-blue.svg)](https://github.com/qtjambi)
+[![Qt Jambi](https://img.shields.io/badge/Qt%20Jambi-4.8.7-blue.svg)](https://github.com/qtjambi)
 [![Release Tag](https://img.shields.io/github/tag/jcs090218/JCSQtJ.svg?label=release)](https://github.com/jcs090218/JCSQtJ/releases/latest)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
