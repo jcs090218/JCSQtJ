@@ -15,7 +15,7 @@ Qt framework's standard, and I think those are acceptable for people
 who developed/worked in Qt. For simplicity for rest of the people
 I decide to have most of functionality and wrap it into one single
 function call, so it will speed up alot faster during GUI base
-software development. <br/><br/>
+software development.
 
 ## Todo List
 
